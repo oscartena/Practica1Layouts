@@ -11,8 +11,56 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/md_theme_dark_errorContainer"
+                android:minHeight="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play juegos"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"></TextView>
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_add" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_search" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -84,6 +132,7 @@
                     android:layout_weight="1"
                     android:text="CHANGE"
                     android:layout_marginRight="50dp"
+                    style="@style/estiloBoton"
                     />
 
         </TableRow>

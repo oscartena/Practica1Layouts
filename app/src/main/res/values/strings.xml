@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Practica1</string>
+    <string name="action_settings">opciones</string>
+    <string name="action_buscar">buscar</string>
+    <string name="action_add">añadir</string>
 </resources>
