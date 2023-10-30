@@ -35,7 +35,7 @@
         android:text="NEW PLAYER" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/preferences"
         android:layout_width="300dip"
         android:layout_height="wrap_content"
         android:text="PREFERENCES" />

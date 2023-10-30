@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button newPlayer;
+    Button preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
+        });
+
+        preferences = findViewById(R.id.preferences);
+        preferences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,Preferences.class);
+                startActivity(intent);
+            }
         });
 
     }
