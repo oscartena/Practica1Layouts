@@ -1,49 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center">
+    tools:context=".MainActivity">
 
-
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="61dp"
-        android:fontFamily="@font/courgetteregular"
-        android:text="Play Juegos"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/md_theme_dark_errorContainer"
+        android:minHeight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="300dip"
-        android:layout_height="wrap_content"
-        android:text="PLAY" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play juegos"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/newPlayer"
-        android:layout_width="300dip"
-        android:layout_height="wrap_content"
-        android:text="NEW PLAYER" />
+        <ImageButton
+            android:id="@+id/opciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+            android:layout_gravity="end" />
 
-    <Button
-        android:id="@+id/preferences"
-        android:layout_width="300dip"
-        android:layout_height="wrap_content"
-        android:text="PREFERENCES" />
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            android:layout_gravity="end" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="300dip"
-        android:layout_height="wrap_content"
-        android:text="ABOUT" />
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_menu_search"
+            android:layout_gravity="end" />
 
-</LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:fontFamily="@font/courgetteregular"
+            android:text="Play Juegos"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/play"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newPlayer"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:text="NEW PLAYER"
+            app:layout_constraintTop_toBottomOf="@id/play"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/preferences"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:text="PREFERENCES"
+            app:layout_constraintTop_toBottomOf="@id/newPlayer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            app:layout_constraintTop_toBottomOf="@id/preferences"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

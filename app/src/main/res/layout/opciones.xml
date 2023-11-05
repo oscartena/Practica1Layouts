@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Contenido de la pantalla de opciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plataformas:"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <!-- Aquí puedes agregar los Chips como elementos secundarios del ChipGroup -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1D1D1"
+                android:text="PS4" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1D1D1"
+                android:text="PC" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1D1D1"
+                android:text="XBOX" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1D1D1"
+                android:text="WII" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1D1D1"
+                android:text="WIIU" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1D1D1"
+                android:text="3DS" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1D1D1"
+                android:text="X360" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Géneros:"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+           />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accion"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aventura"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deportes"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disparos"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estrategia"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lucha"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Musical"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rol"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simulación"
+            android:textAlignment="textStart"
+            android:background="@drawable/bottom_border"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/md_theme_dark_errorContainer"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+       />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bar"
+        android:src="@android:drawable/ic_input_add"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

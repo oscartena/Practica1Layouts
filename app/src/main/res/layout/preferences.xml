@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:text="Elige una opción"
+        android:text="Elige una opción:"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -81,12 +81,14 @@
 
     <RatingBar
         android:id="@+id/ratingBar"
-        android:layout_width="340dp"
-        android:layout_height="57dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:numStars="7"
+        android:stepSize="0.5"/>
 
     <SeekBar
         android:id="@+id/seekBar"

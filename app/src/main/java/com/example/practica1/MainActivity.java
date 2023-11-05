@@ -8,16 +8,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button newPlayer;
     Button preferences;
+    Button play;
+    ImageButton opciones;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        opciones = findViewById(R.id.opciones);
+        opciones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,Opciones.class);
+                startActivity(intent);
+            }
+        });
 
         newPlayer = findViewById(R.id.newPlayer);
         newPlayer.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +49,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this,Preferences.class);
+                startActivity(intent);
+            }
+        });
+
+        play = findViewById(R.id.play);
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, Games.class);
                 startActivity(intent);
             }
         });
