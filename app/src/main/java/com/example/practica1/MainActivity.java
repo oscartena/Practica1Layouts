@@ -7,15 +7,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button newPlayer;
-    Button preferences;
-    Button play;
-    ImageButton opciones;
+    private Button newPlayer;
+    private Button preferences;
+    private Button play;
+    private ImageButton opciones;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this,Opciones.class);
                 startActivity(intent);
+
+
             }
         });
+
 
         newPlayer = findViewById(R.id.newPlayer);
         newPlayer.setOnClickListener(new View.OnClickListener() {

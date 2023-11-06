@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     >
 
-    <!-- Contenido de la pantalla de opciones -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,7 +14,7 @@
         android:layout_margin="15dp">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/plataformas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Plataformas:"
@@ -24,66 +23,66 @@
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroup"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginRight="20dp"
+            app:singleSelection="true"
             >
 
-            <!-- Aquí puedes agregar los Chips como elementos secundarios del ChipGroup -->
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip1"
+                android:id="@+id/chipPs4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D1D1D1"
-                android:text="PS4" />
+                android:text="PS4"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip2"
+                android:id="@+id/chipPc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D1D1D1"
-                android:text="PC" />
+                android:text="PC"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip3"
+                android:id="@+id/chipXbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D1D1D1"
-                android:text="XBOX" />
+                android:text="XBOX"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip4"
+                android:id="@+id/chipWii"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D1D1D1"
-                android:text="WII" />
+                android:text="WII"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip5"
+                android:id="@+id/chipWiiu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D1D1D1"
-                android:text="WIIU" />
+                android:text="WIIU"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip6"
+                android:id="@+id/chip3ds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D1D1D1"
-                android:text="3DS" />
+                android:text="3DS"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip7"
+                android:id="@+id/chipXbox360"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D1D1D1"
-                android:text="X360" />
+                android:text="X360"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
 
         </com.google.android.material.chip.ChipGroup>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/generos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Géneros:"
@@ -91,86 +90,10 @@
             android:layout_marginTop="15dp"
            />
 
-        <Button
-            android:id="@+id/button5"
+        <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Accion"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Aventura"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Deportes"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Disparos"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Estrategia"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lucha"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Musical"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rol"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Simulación"
-            android:textAlignment="textStart"
-            android:background="@drawable/bottom_border"
-            android:textColor="@android:color/black"/>
+            android:layout_height="match_parent"
+            android:id="@+id/listview"/>
 
 
     </LinearLayout>
@@ -181,6 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/md_theme_dark_errorContainer"
+        app:fabAnchorMode="cradle"
         style="@style/Widget.MaterialComponents.BottomAppBar"
        />
 
@@ -188,6 +112,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
         app:layout_anchor="@id/bar"
         android:src="@android:drawable/ic_input_add"
         />
