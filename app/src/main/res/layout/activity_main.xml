@@ -97,7 +97,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button4"
+            android:id="@+id/about"
             android:layout_width="300dip"
             android:layout_height="wrap_content"
             android:text="ABOUT"

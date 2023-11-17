@@ -3,4 +3,13 @@
     <string name="action_settings">opciones</string>
     <string name="action_buscar">buscar</string>
     <string name="action_add">añadir</string>
+
+    <string-array name="telefonos">
+        <item>Telefono 1</item>
+        <item>Telefono 2</item>
+        <item>Telefono 3</item>
+        <item>Telefono 4</item>
+        <item>Telefono 5</item>
+        <item>Telefono 6</item>
+    </string-array>
 </resources>

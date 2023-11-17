@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button newPlayer;
     private Button preferences;
     private Button play;
+    private Button about;
     private ImageButton opciones;
 
 
@@ -65,6 +66,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, Games.class);
+                startActivity(intent);
+            }
+        });
+
+        about = findViewById(R.id.about);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, About.class);
                 startActivity(intent);
             }
         });

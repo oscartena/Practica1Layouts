@@ -32,6 +32,8 @@
             />
         <activity android:name=".Opciones"
             />
+        <activity android:name=".About"
+            />
     </application>
 
 </manifest>
